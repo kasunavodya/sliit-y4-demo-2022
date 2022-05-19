@@ -5,7 +5,6 @@ metadata:
   labels:
     app: test-sliit
   name: test-sliit
-  namespace: default
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -25,7 +24,7 @@ spec:
         app: test-sliit
     spec:
       containers:
-      - image: knavodya/sliit-2022-test:3e511192ad8c983311f1565028cbca73a6f3b45b
+      - image: knavodya/sliit-2022-test:ec86341f6393c64ed5a6fe9b69ac113f5e174058
         imagePullPolicy: Always
         name: sliit-2022-test
         resources: {}
